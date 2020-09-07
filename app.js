@@ -5,7 +5,7 @@ mongoose = require("mongoose"),
 express = require("express"),
 app = express();
 
-mongoose.connect("mongodb+srv://shreyas:Yashoda123@@cluster0-qoqhh.mongodb.net/test?retryWrites=true&w=majority",{
+mongoose.connect(("mongodb+srv://shreyas:Yashoda123@@cluster0-qoqhh.mongodb.net/test?retryWrites=true&w=majority"),{
 	useNewUrlParser: true,
 	useCreateIndex: true,
 	useUnifiedTopology: true,
@@ -15,6 +15,7 @@ mongoose.connect("mongodb+srv://shreyas:Yashoda123@@cluster0-qoqhh.mongodb.net/t
 }).catch(err => {
 	console.log("ERROR:",err.message);
 });
+
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -105,6 +106,6 @@ app.get("/blogs/:id/delete", function(req,res){
 	body: "Sixer!!!"
 });*/ 
 
-app.listen(3000, function(){
-	console.log("The server is just started!!!");
+app.listen(process.env.PORT || 3000,function(){
+    console.log("Yelpcamp is just started");
 });
