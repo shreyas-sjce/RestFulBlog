@@ -29,12 +29,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shreyas-sjce/RestfulBlog.git"
+    "url": "git+https://github.com/shreyas-sjce/RestFulBlog.git"
   },
   "author": "Shreyas K",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shreyas-sjce/RestfulBlog/issues"
+    "url": "https://github.com/shreyas-sjce/RestFulBlog/issues"
   },
-  "homepage": "https://github.com/shreyas-sjce/RestfulBlog#readme"
+  "homepage": "https://github.com/shreyas-sjce/RestFulBlog#readme"
 }
